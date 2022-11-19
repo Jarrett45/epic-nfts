@@ -28,7 +28,7 @@ contract MyEpicNFT is ERC721URIStorage {
     //I create three arrays, each with their own theme of random words.
     //Pick some random funny words, names of anime characters, foods you like, whatever!
     string[15] firstWords = ["Spooky", "Epic", "Crazy", "Fantastic", "Terrible", "Wild", "Terrifying", "Funny", "Justice", "Trouble", "Revolution", "Dull", "Thoughtful", "Esoteric", "Comical"];
-    string[16] secondWords = ["Darkness", "Justice", "Brave", "Dangerous", "Smartness", "Ruthless", "Majestic", "Sinister", "Kindness", "Courteous", "Judicious", "Brilliant", "Mysterious", "Charming", "Magical", "Madness"];
+    string[15] secondWords = ["Darkness", "Justice", "Brave", "Dangerous", "Smartness", "Ruthless", "Majestic", "Sinister", "Kindness", "Courteous", "Judicious", "Brilliant", "Mysterious", "Charming", "Magical"];
     string[15] thirdWords = ["Joker", "King", "Thief", "Researcher", "Captain", "Inventor", "Machinic", "Magician", "Adventurer", "Counselor", "Politician", "Entrepreneur", "Architect", "Professor", "Artiste"];
 
     //we need to pass the name of our NFTs token and its symbol.
@@ -113,6 +113,7 @@ contract MyEpicNFT is ERC721URIStorage {
         //increment the counter for when the next NFT is minted.
         _tokenIds.increment();
         console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
+
     }
 
     //set the NFT's metadata
